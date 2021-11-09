@@ -1,14 +1,13 @@
 # Curso Intermediário de Angular - Digital Innovation One
 
-Esse curso foi feito para a plataforma [Digital Innovation One](https://digitalinnovation.one/)
+Esse curso foi feito pela plataforma [Digital Innovation One](https://digitalinnovation.one/)
 
 O curso consiste em um sistema de filmes, com a possibilidade de cadastros, edições, listagem e visualização dos filmes.
 
 ## Instalação
 
-1. clone o repositório `git clone git@github.com:RenanRB/curso-angular.git`
+1. clone o repositório `git clone git@github.com:Billmetal/curso-angular-intermediario.git`
 2. Entre no projeto e instale as dependencias `npm install`
-3. Caso você queira alguma aula específica lembre que voce pode pegar direto das nossas release fazendo download do zip ou clonando a partir do commit hash, URL: https://github.com/RenanRB/curso-angular/tags
 
 ## Ambiente Local
 
