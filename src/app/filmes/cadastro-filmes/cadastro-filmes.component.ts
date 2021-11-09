@@ -31,6 +31,17 @@ export class CadastroFilmesComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    this.cadastro = this.fb.group({
+      titulo: ["",[Validators.required,Validators.minLength(2),Validators.maxLength(256)]],
+      urlFoto: ["",[Validators.minLength(10)]],
+      dtLancamento: ["",[Validators.required]],
+      descricao: [""],
+      nota: [0,[Validators.required,Validators.min(0),Validators.max(10)]],
+      urlIMDb: ["",[Validators.minLength(10)]],
+      genero: ["",Validators.required]
+    });
+
     this.id = this.activatedRoute.snapshot.params['id'];
     if (this.id) {
       this.filmeService.visualizar(this.id)
@@ -39,7 +50,7 @@ export class CadastroFilmesComponent implements OnInit {
       this.criarFormulario(this.criarFilmeEmBranco());
     }
 
-    this.generos = ['Ação', 'Romance', 'Aventura', 'Terror', 'Ficção cientifica', 'Comédia', 'Aventura', 'Drama'];
+    this.generos = ['Ação', 'Romance', 'Aventura', 'Terror', 'Ficção cientifica', 'Comédia', 'Suspense', 'Drama'];
 
   }
 
